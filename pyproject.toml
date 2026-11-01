@@ -1,0 +1,22 @@
+[project]
+name = "subnet-calculator"
+version = "1.0.0"
+description = "IPv4 subnet / CIDR calculator CLI implemented with plain integer bit math"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+
+[project.scripts]
+subnetcalc = "subnetcalc.cli:main"
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]
+addopts = "-q --strict-markers"
+
+[tool.coverage.run]
+source = ["subnetcalc"]
+branch = true
+
+[tool.coverage.report]
+fail_under = 90
+show_missing = true
