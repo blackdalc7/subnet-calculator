@@ -1,5 +1,7 @@
 # subnet-calculator
 
+[![CI](https://github.com/blackdalc7/subnet-calculator/actions/workflows/ci.yml/badge.svg)](https://github.com/blackdalc7/subnet-calculator/actions/workflows/ci.yml)
+
 An IPv4 subnet / CIDR calculator you can use from the command line. The maths is
 written out with plain integer **bit operations** rather than leaning on
 Python's `ipaddress` module — the whole point of the project was to understand
